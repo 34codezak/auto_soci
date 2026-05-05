@@ -1,0 +1,61 @@
+body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+
+    .primary-color {
+      color: #ff5a1f;
+    }
+
+    .bg-primary {
+      background: linear-gradient(135deg, #ff5a1f, #ff8c42);
+    }
+
+    .silver {
+      color: #c0c0c0;
+    }
+
+    .hero {
+      height: 100vh;
+      background: url('https://source.unsplash.com/1600x900/?technology,network') no-repeat center/cover;
+      position: relative;
+    }
+
+    .overlay {
+      background: rgba(0,0,0,0.7);
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .feature-card {
+      background: #1a1a1a;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(255,90,31,0.3);
+    }
+
+    .cta {
+      background: linear-gradient(135deg, #ff5a1f, #ff8c42);
+    }
+
+    footer {
+      background: #000;
+    }
+
+    img.logo {
+      max-width: 120px;
+    }
