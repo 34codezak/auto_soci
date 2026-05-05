@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Social</title>
+
+  <!-- W3.CSS -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+
+    .primary-color {
+      color: #ff5a1f;
+    }
+
+    .bg-primary {
+      background: linear-gradient(135deg, #ff5a1f, #ff8c42);
+    }
+
+    .silver {
+      color: #c0c0c0;
+    }
+
+    .hero {
+      height: 100vh;
+      background: url('https://source.unsplash.com/1600x900/?technology,network') no-repeat center/cover;
+      position: relative;
+    }
+
+    .overlay {
+      background: rgba(0,0,0,0.7);
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .feature-card {
+      background: #1a1a1a;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(255,90,31,0.3);
+    }
+
+    .cta {
+      background: linear-gradient(135deg, #ff5a1f, #ff8c42);
+    }
+
+    footer {
+      background: #000;
+    }
+
+    img.logo {
+      max-width: 120px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-bar w3-black w3-padding">
+  <span class="w3-bar-item w3-xlarge primary-color"><b>Auto Social</b></span>
+  <a href="#features" class="w3-bar-item w3-button w3-hide-small">Features</a>
+  <a href="#about" class="w3-bar-item w3-button w3-hide-small">About</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+</div>
+
+<!-- Hero Section -->
+<div class="hero">
+  <div class="overlay"></div>
+  <div class="w3-container w3-center hero-content">
+    <img src="assets/AutoSocial-logo.png" class="logo w3-margin-bottom">
+    <h1 class="w3-xxxlarge"><b>YOUR GROWTH,<br>ON AUTOPILOT</b></h1>
+    <p class="silver">Automate. Grow. Dominate.</p>
+    <button class="w3-button bg-primary w3-large w3-margin-top">Get Started</button>
+  </div>
+</div>
+
+<!-- About -->
+<div id="about" class="w3-container w3-padding-64 w3-center">
+  <h2 class="primary-color"><b>Welcome to Auto Social</b></h2>
+  <p class="w3-large silver w3-padding">
+    Your all-in-one social media management platform designed to take the heavy lifting out of your digital marketing.
+    We handle your social media so you can focus on growing your business.
+  </p>
+</div>
+
+<!-- Features -->
+<div id="features" class="w3-container w3-padding-64">
+
+  <h2 class="w3-center primary-color"><b>Why Choose Auto Social?</b></h2>
+
+  <div class="w3-row-padding w3-margin-top">
+
+    <div class="w3-third w3-padding">
+      <div class="w3-padding feature-card w3-center">
+        <i class="fas fa-robot fa-3x primary-color"></i>
+        <h3>Automated Posting</h3>
+        <p>Effortlessly post across multiple platforms on autopilot.</p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-padding">
+      <div class="w3-padding feature-card w3-center">
+        <i class="fas fa-clock fa-3x primary-color"></i>
+        <h3>Smart Scheduling</h3>
+        <p>Publish content at the perfect time for maximum impact.</p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-padding">
+      <div class="w3-padding feature-card w3-center">
+        <i class="fas fa-users fa-3x primary-color"></i>
+        <h3>Audience Growth</h3>
+        <p>Grow real followers and build strong connections.</p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-padding">
+      <div class="w3-padding feature-card w3-center">
+        <i class="fas fa-chart-line fa-3x primary-color"></i>
+        <h3>Analytics</h3>
+        <p>Track performance with clear, actionable insights.</p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-padding">
+      <div class="w3-padding feature-card w3-center">
+        <i class="fas fa-globe fa-3x primary-color"></i>
+        <h3>24/7 Presence</h3>
+        <p>Stay active even while you sleep.</p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-padding">
+      <div class="w3-padding feature-card w3-center">
+        <i class="fas fa-bolt fa-3x primary-color"></i>
+        <h3>Powerful Automation</h3>
+        <p>Tech built to scale your brand fast.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Who It's For -->
+<div class="w3-container w3-padding-64 w3-dark-grey w3-center">
+  <h2 class="primary-color"><b>Built for Everyone</b></h2>
+
+  <div class="w3-row-padding w3-margin-top">
+
+    <div class="w3-quarter">
+      <i class="fas fa-building fa-2x"></i>
+      <p>Businesses</p>
+    </div>
+
+    <div class="w3-quarter">
+      <i class="fas fa-star fa-2x"></i>
+      <p>Influencers</p>
+    </div>
+
+    <div class="w3-quarter">
+      <i class="fas fa-rocket fa-2x"></i>
+      <p>Startups</p>
+    </div>
+
+    <div class="w3-quarter">
+      <i class="fas fa-video fa-2x"></i>
+      <p>Creators</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="w3-container w3-padding-64 w3-center cta">
+  <h2><b>Ready to Grow Together?</b></h2>
+  <p>Stop struggling. Start dominating your niche.</p>
+
+  <a href="https://wa.me/254794249464" target="_blank" class="w3-button w3-black w3-margin">
+    <i class="fab fa-whatsapp"></i> WhatsApp Us
+  </a>
+
+  <a href="mailto:autosocial254@gmail.com" class="w3-button w3-white w3-margin">
+    <i class="fas fa-envelope"></i> Email Us
+  </a>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-padding-32">
+  <p class="silver">Auto Social — Automating Social, Accelerating Connections</p>
+</footer>
+
+<!-- JS -->
+<script>
+  // Simple scroll animation
+  window.addEventListener("scroll", function() {
+    const elements = document.querySelectorAll(".feature-card");
+    elements.forEach(el => {
+      const pos = el.getBoundingClientRect().top;
+      if (pos < window.innerHeight - 100) {
+        el.style.opacity = 1;
+        el.style.transform = "translateY(0)";
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
